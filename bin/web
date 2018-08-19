@@ -3,5 +3,5 @@
 if [ "${NODE_ENV}" == "production" ]; then
   exec node main.js
 else
-  exec nodemon main.js
+  exec node_modules/.bin/nodemon main.js
 fi
