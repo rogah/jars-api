@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Jars API",
   "main": "index.js",
-  "module": "main.js",
+  "module": "index.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:dev": "nodemon index.js",
