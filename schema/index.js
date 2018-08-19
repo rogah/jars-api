@@ -9,10 +9,10 @@ const schema = buildSchema(`
 `);
 
 const root = {
-    message: () => 'Jars API'
+  message: () => 'Jars API',
 };
 
 module.exports = {
-    schema,
-    root,
+  schema,
+  root,
 };
