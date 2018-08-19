@@ -7,7 +7,8 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:dev": "nodemon index.js",
-    "start:prod": "node index.js"
+    "start:prod": "node index.js",
+    "lint": "eslint '**/*.js'"
   },
   "keywords": [
     "jars",
@@ -23,6 +24,9 @@
     "if-env": "^1.0.4"
   },
   "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "nodemon": "^1.18.3"
   }
 }

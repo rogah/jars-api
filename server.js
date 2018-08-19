@@ -12,9 +12,9 @@ const PORT = process.env.PORT || 4000;
 app.set('port', PORT);
 
 app.use('/graphql', graphqlHttp({
-    schema: schema,
-    rootValue: root,
-    graphiql: true
+  schema,
+  rootValue: root,
+  graphiql: true,
 }));
 
 app.get('/', (req, res) => res.send('Hello World!'));
