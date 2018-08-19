@@ -9,6 +9,9 @@
     "lint": "eslint '**/*.js'",
     "lint:fix": "npm run lint -- --fix"
   },
+  "engines": {
+    "node": "10.7.x"
+  },
   "keywords": [
     "jars",
     "api"
