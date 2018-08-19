@@ -1,0 +1,28 @@
+{
+  "name": "jars-api",
+  "version": "1.0.0",
+  "description": "Jars API",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:dev": "nodemon index.js",
+    "start:prod": "node index.js"
+  },
+  "keywords": [
+    "jars",
+    "api"
+  ],
+  "author": "rogerio.w.carvalho@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "esm": "^3.0.77",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
