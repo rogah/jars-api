@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ "${NODE_ENV}" == "production" ]; then
+  exec node main.js
+else
+  exec nodemon main.js
+fi

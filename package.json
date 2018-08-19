@@ -5,9 +5,7 @@
   "main": "main.js",
   "module": "main.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:dev": "nodemon main.js",
-    "start:prod": "nf main.js",
+    "start": "nf start",
     "lint": "eslint '**/*.js'",
     "lint:fix": "npm run lint -- --fix"
   },
@@ -23,7 +21,6 @@
     "express-graphql": "^0.6.12",
     "foreman": "^3.0.1",
     "graphql": "^0.13.2",
-    "if-env": "^1.0.4",
     "morgan": "^1.9.0",
     "winston": "^3.0.0"
   },
